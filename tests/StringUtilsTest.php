@@ -1,17 +1,10 @@
 <?php
-/*
-Нажмите кнопку run чтобы запустить тесты.
-Попробуйте изменять код функции / тестов, запуская проверки заново.
-*/
 
 require("src/StringUtils.php");
 
-if (StringUtils\capitalize('hello') !== 'Hello') {
-    throw new \Exception('Функция работает неверно!');
-}
+require("vendor/autoload.php");
 
-if (StringUtils\capitalize('') !== '') {
-    throw new \Exception('Функция работает неверно!');
-}
+use Webmozart\Assert\Assert;
 
-echo 'Все тесты пройдены!';
+Assert::eq(StringUtils\capitalize('hello'), 'Hello');
+Assert::eq(StringUtils\capitalize(''), '');
