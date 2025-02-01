@@ -1,0 +1,14 @@
+{
+    "name": "stringutils/stringutils",
+    "description": "homework on hexlet about automatic tests",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Анастасия Маслова",
+            "email": "maslava30@gmail.com"
+        }
+    ],
+    "require": {
+        "webmozart/assert": "^1.11"
+    }
+}
